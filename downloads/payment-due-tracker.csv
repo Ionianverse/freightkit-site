@@ -1,0 +1,1 @@
+supplier,invoice_number,invoice_date,invoice_amount,currency,payment_terms,due_date,discount_pct,discount_deadline,discount_amount,amount_paid,payment_date,balance,status,notes

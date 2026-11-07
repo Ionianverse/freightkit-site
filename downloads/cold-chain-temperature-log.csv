@@ -1,0 +1,1 @@
+shipment_or_storage_id,product,location,reading_datetime,temperature_c,min_allowed_c,max_allowed_c,within_range,humidity_pct,logger_id,checked_by,excursion_minutes,action_taken

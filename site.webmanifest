@@ -1,0 +1,15 @@
+{
+  "name": "FreightKit — Logistics & Supply Chain Calculators",
+  "short_name": "FreightKit",
+  "description": "Free freight, logistics and supply-chain calculators with transparent formulas.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8fa",
+  "theme_color": "#0b5fff",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,1 @@
+grn_number,receipt_date,po_number,supplier,sku,description,qty_ordered,qty_received,qty_accepted,qty_damaged,qty_short,qty_excess,uom,received_by,qc_status,remarks

@@ -1,0 +1,13 @@
+step,document_or_action,applies,status,reference_number,date_completed,responsible,notes
+1,"Commercial invoice, packing list and B/L or AWB received",,,,,,
+2,"Product licences / registrations checked (e.g. BIS, FSSAI, WPC) if applicable",,,,,,
+3,Import General Manifest (IGM) filed by carrier,,,,,,
+4,Bill of entry filed on ICEGATE,,,,,,
+5,Duty assessed,,,,,,
+6,Duty paid,,,,,,
+7,Examination completed (if selected),,,,,,
+8,Out of charge issued,,,,,,
+9,Delivery order collected from shipping line / airline,,,,,,
+10,Port / CFS charges paid and gate pass issued,,,,,,
+11,Container delivered to warehouse,,,,,,
+12,Empty container returned (detention stops),,,,,,

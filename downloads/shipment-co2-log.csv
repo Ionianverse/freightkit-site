@@ -1,0 +1,1 @@
+shipment_id,date,mode,origin,destination,distance_km,weight_tonnes,tonne_km,emission_factor_g_co2e_per_tkm,emission_factor_source,co2e_kg,carrier,customer,notes

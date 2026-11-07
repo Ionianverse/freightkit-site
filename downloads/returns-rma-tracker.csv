@@ -1,0 +1,1 @@
+rma_number,order_number,return_date,customer,channel,sku,qty,return_reason,item_condition,inspection_result,disposition,refund_amount,refund_status,restocked,notes

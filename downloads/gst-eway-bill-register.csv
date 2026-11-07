@@ -1,0 +1,1 @@
+invoice_number,invoice_date,customer_name,customer_gstin,place_of_supply,hsn_code,taxable_value,cgst,sgst,igst,invoice_total,eway_bill_number,eway_bill_date,eway_bill_valid_until,vehicle_number,transporter,distance_km,status,notes

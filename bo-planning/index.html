@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BO Planning System | FreightKit</title>
+<meta name="description" content="Back-order planning system for authorized users.">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b1f3a"><link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="app-shell.css?v=20261107a">
+</head>
+<body class="bo-app bo-shell">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="bo-appbar">
+<div class="bo-appbar-inner">
+<a class="bo-brand" href="../" aria-label="FreightKit home"><span class="bo-brand-logo">Freight<span>Kit</span></span><span class="bo-brand-sep" aria-hidden="true"></span><span class="bo-brand-app">BO Planning System</span></a>
+<div class="bo-appbar-right">
+<span class="bo-user" id="signed-in" hidden><span class="bo-user-dot" aria-hidden="true"></span><span id="signed-user">Signed in</span></span>
+<button class="bo-appbar-btn" type="button" id="sign-out" hidden>Sign out</button>
+<a class="bo-appbar-link" href="../" id="site-link">FreightKit home</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="bo-login" id="login-card">
+<div class="bo-login-card">
+<div class="bo-login-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+<h1>BO Planning System</h1>
+<p class="bo-login-sub">Back-order planning, expediting and material requirements. Authorized users only.</p>
+<form id="login-form" autocomplete="on">
+<div class="field"><label for="login-id">ID</label><input id="login-id" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required></div>
+<div class="field"><label for="login-password">Password</label><input id="login-password" name="password" type="password" autocomplete="current-password" required></div>
+<button class="btn" type="submit" id="login-btn">Sign in</button>
+<p id="login-status" class="bo-login-status" role="status" aria-live="polite"></p>
+</form>
+<ul class="bo-login-points">
+<li>Your files are read in this browser only and never uploaded.</li>
+<li>Signing out clears everything from this page. You are signed out automatically after 1 hour without activity.</li>
+</ul>
+</div>
+</section>
+<div id="app-root"></div>
+</main>
+<footer class="bo-appfoot"><span>© <span id="yr"></span> FreightKit · BO Planning System</span></footer>
+<script src="../assets/vendor/sheetjs/xlsx.full.min.js"></script>
+<script src="login.js?v=20261107a"></script>
+</body></html>

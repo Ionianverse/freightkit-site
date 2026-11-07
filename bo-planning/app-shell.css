@@ -1,0 +1,33 @@
+/* BO Planning System – application shell (app bar, sign-in, footer). */
+.bo-shell{background:#f4f6f9;min-height:100vh;display:flex;flex-direction:column}
+.bo-shell main{flex:1}
+.bo-appbar{background:#0b1f3a;color:#fff;position:sticky;top:0;z-index:60;box-shadow:0 1px 0 #ffffff14}
+.bo-appbar-inner{max-width:1360px;margin:0 auto;padding:0 18px;height:58px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.bo-brand{display:flex;align-items:center;gap:12px;color:#fff;min-width:0}
+.bo-brand-logo{font-weight:800;font-size:19px;letter-spacing:-.01em;white-space:nowrap}.bo-brand-logo span{color:#5b9bff}
+.bo-brand-sep{width:1px;height:22px;background:#ffffff40}
+.bo-brand-app{font-weight:650;font-size:15px;color:#dbe7f7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bo-appbar-right{display:flex;align-items:center;gap:12px}
+.bo-user{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:#dbe7f7}
+.bo-user-dot{width:8px;height:8px;border-radius:50%;background:#31c48d}
+.bo-appbar-btn{border:1px solid #ffffff55;background:transparent;color:#fff;border-radius:8px;padding:7px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.bo-appbar-btn:hover{background:#ffffff14}
+.bo-appbar-link{color:#b9cde6;font-size:13px;font-weight:600}
+.bo-appbar-link:hover{color:#fff}
+.bo-appbar-btn:focus-visible,.bo-appbar-link:focus-visible,.bo-brand:focus-visible{outline:2px solid #5b9bff;outline-offset:2px}
+
+.bo-login{padding:64px 16px 80px;display:flex;justify-content:center}
+.bo-login-card{width:100%;max-width:420px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px 30px;box-shadow:0 10px 30px #0f172a12}
+.bo-login-mark{width:48px;height:48px;border-radius:12px;background:#eef4ff;color:var(--brand);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.bo-login-card h1{font-size:24px;margin:0 0 6px}
+.bo-login-sub{margin:0 0 20px;color:var(--muted);font-size:14px}
+.bo-login-card .btn{width:100%;margin-top:4px;padding:12px;font-size:15px}
+.bo-login-status{min-height:20px;margin:12px 0 0;font-size:14px;color:var(--muted)}
+.bo-login-status.is-error{color:#9f1239;font-weight:650}
+.bo-login-points{margin:18px 0 0;padding:14px 0 0 18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.bo-login-points li{margin-bottom:4px}
+
+.bo-idle-warn{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:80;max-width:min(560px,calc(100vw - 32px));background:#0b1f3a;color:#fff;border-radius:10px;padding:12px 16px;font-size:14px;box-shadow:0 8px 24px #0f172a40}
+.bo-appfoot{padding:16px 18px;text-align:center;font-size:12px;color:var(--muted);border-top:1px solid var(--line);background:#fff}
+
+@media(max-width:640px){.bo-brand-sep,.bo-appbar-link{display:none}.bo-brand-app{font-size:13px}.bo-login{padding-top:32px}.bo-login-card{padding:24px 20px}}

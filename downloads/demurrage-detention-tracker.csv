@@ -1,0 +1,1 @@
+container_number,shipping_line,port,discharge_date,port_free_days,last_free_day,gate_out_date,demurrage_days,demurrage_rate_per_day,demurrage_amount,detention_free_days,empty_return_date,detention_days,detention_rate_per_day,detention_amount,total_charges,currency,disputed,notes
