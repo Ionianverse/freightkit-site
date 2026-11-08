@@ -51,5 +51,6 @@
 .bo-adm-log{margin-top:16px;font-size:13px}.bo-adm-log ul{margin:8px 0 0;padding-left:18px;max-height:240px;overflow:auto}
 @media(max-width:640px){.bo-appbar-btn{padding:6px 8px;font-size:12px}.bo-user{display:none}}
 .bo-adm-mail{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;align-items:end}
-.bo-adm-mail .bo-adm-btns{grid-column:1/-1}
+.bo-adm-mail .bo-adm-btns,.bo-adm-mail .bo-adm-mailnote{grid-column:1/-1}
+.bo-adm-mailnote{margin:0}
 @media(max-width:640px){.bo-adm-mail{grid-template-columns:1fr}}
