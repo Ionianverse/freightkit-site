@@ -5,10 +5,10 @@
 <title>BO Planning System | FreightKit</title>
 <meta name="description" content="Back-order planning system for approved users.">
 <meta name="robots" content="noindex, nofollow">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#0b1f3a"><link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="app-shell.css?v=20261108d">
+<link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="app-shell.css?v=20261109a">
 </head>
 <body class="bo-app bo-shell">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -40,7 +40,7 @@
 </div>
 
 <div class="bo-login-card" id="request-card" hidden>
-<h1>Request access</h1>
+<h2 class="bo-login-h">Request access</h2>
 <p class="bo-login-sub">The admin reviews every request. You can sign in once it is approved; you will get an email.</p>
 <form id="request-form" autocomplete="on">
 <div class="field"><label for="rq-name">Your name</label><input id="rq-name" autocomplete="name" required maxlength="120"></div>
@@ -56,7 +56,7 @@
 </div>
 
 <div class="bo-login-card" id="password-card" hidden>
-<h1>Change password</h1>
+<h2 class="bo-login-h">Change password</h2>
 <form id="password-form" autocomplete="on">
 <div class="field"><label for="pw-current">Current password</label><input id="pw-current" type="password" autocomplete="current-password" required></div>
 <div class="field"><label for="pw-next">New password <span class="opt">12+ characters, letters and numbers</span></label><input id="pw-next" type="password" autocomplete="new-password" required></div>
@@ -79,5 +79,5 @@
 </main>
 <footer class="bo-appfoot"><span>© <span id="yr"></span> FreightKit · BO Planning System</span></footer>
 <script src="../assets/vendor/sheetjs/xlsx.full.min.js"></script>
-<script src="login.js?v=20261108d"></script>
+<script src="login.js?v=20261109a"></script>
 </body></html>

@@ -81,7 +81,7 @@
     me = user;
     $('signed-user').textContent = user.name || user.email;
     $('signed-in').hidden = false; $('sign-out').hidden = false; $('site-link').hidden = true;
-    if (user.mustChange) { show('password-card'); say('password-status', 'Choose a new password before you start (the admin set a temporary one).'); $('pw-cancel').textContent = 'Sign out'; $('pw-current').focus(); return; }
+    if (user.mustChange) { $('app-loading').hidden = true; show('password-card'); say('password-status', 'Choose a new password before you start (the admin set a temporary one).'); $('pw-cancel').textContent = 'Sign out'; $('pw-current').focus(); return; }
     show(null); $('login-wrap').hidden = true;
     const loading = $('app-loading'); loading.hidden = false;
     try {
@@ -208,8 +208,10 @@ ${pending.length ? `<div class="bo-adm-list">${pending.map((u) => `<div class="b
   /* ---------- start ---------- */
   const note = sessionStorage.getItem('bo-signed-out'); if (note !== null) { sessionStorage.removeItem('bo-signed-out'); if (note) say('login-status', note); }
   (async () => {
+    // While the sign-in is checked, say so (on a slow connection the page would otherwise look empty).
+    const loading = $('app-loading'); loading.textContent = 'Opening the BO Planning System…'; loading.hidden = false;
     try { const r = await api('auth.php?a=me'); await enter(r.user); }
-    catch (err) { $('login-wrap').hidden = false; show('login-card'); if (err.offline || err.status === 404) say('login-status', err.message, 'error'); $('login-email').focus(); }
+    catch (err) { loading.hidden = true; $('login-wrap').hidden = false; show('login-card'); if (err.offline || err.status === 404) say('login-status', err.message, 'error'); $('login-email').focus(); }
   })();
   window.addEventListener('beforeunload', (ev) => { if (!window.BO_LEAVING && mounted && window.BO_HAS_UNSAVED && window.BO_HAS_UNSAVED()) { ev.preventDefault(); ev.returnValue = ''; } });
 })();
