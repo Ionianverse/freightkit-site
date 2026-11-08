@@ -31,3 +31,22 @@
 .bo-appfoot{padding:16px 18px;text-align:center;font-size:12px;color:var(--muted);border-top:1px solid var(--line);background:#fff}
 
 @media(max-width:640px){.bo-brand-sep,.bo-appbar-link{display:none}.bo-brand-app{font-size:13px}.bo-login{padding-top:32px}.bo-login-card{padding:24px 20px}}
+
+/* Accounts (11/08): request access, password, admin panel */
+.bo-login-alt{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:13px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.bo-login-alt .muted-small{flex-basis:100%}
+.bo-login-status.is-ok{color:#047857;font-weight:650}
+.bo-login-card .opt{font-weight:500;color:var(--muted);font-size:12px}
+.bo-app-loading{text-align:center;color:var(--muted);padding:80px 16px}
+.bo-badge{display:inline-block;min-width:18px;padding:0 5px;margin-left:4px;border-radius:9px;background:#f59e0b;color:#0b1f3a;font-size:11.5px;font-weight:800;line-height:18px;text-align:center}
+.bo-admin{position:fixed;inset:0;z-index:90;background:#0f172a80;display:flex;justify-content:center;align-items:flex-start;padding:40px 16px;overflow:auto}
+.bo-admin-card{width:100%;max-width:1080px;background:#fff;border-radius:14px;padding:22px 24px;box-shadow:0 20px 50px #0f172a40}
+.bo-admin-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.bo-admin-head h2{margin:0;font-size:20px}
+.bo-admin h3{font-size:15px;margin:18px 0 8px}
+.bo-adm-list{display:grid;gap:8px}
+.bo-adm-item{display:flex;justify-content:space-between;align-items:center;gap:10px 16px;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fffbeb}
+.bo-adm-item .muted-small{display:block}
+.bo-adm-btns{display:flex;gap:8px 12px;flex-wrap:wrap;align-items:center}
+.bo-adm-log{margin-top:16px;font-size:13px}.bo-adm-log ul{margin:8px 0 0;padding-left:18px;max-height:240px;overflow:auto}
+@media(max-width:640px){.bo-appbar-btn{padding:6px 8px;font-size:12px}.bo-user{display:none}}
