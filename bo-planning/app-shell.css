@@ -53,4 +53,6 @@
 .bo-adm-mail{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;align-items:end}
 .bo-adm-mail .bo-adm-btns,.bo-adm-mail .bo-adm-mailnote{grid-column:1/-1}
 .bo-adm-mailnote{margin:0}
+.bo-adm-mailwarn{margin:0 0 10px;padding:10px 12px;border-radius:8px;background:#fdecea;color:#8a1c12;font-weight:600;font-size:.9rem}
+.bo-adm-mailwarn.is-ok{background:#e8f5ec;color:#1d5e33;font-weight:500}
 @media(max-width:640px){.bo-adm-mail{grid-template-columns:1fr}}
